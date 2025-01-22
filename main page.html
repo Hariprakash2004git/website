@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listing Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="image/logo.png" alt="Company Logo" class="logo">
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Buy</a>
+                <div class="dropdown-content">
+                    <a href="#">House</a>
+                    <a href="#">Apartment</a>
+                    <a href="#">Condo</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rent</a>
+                <div class="dropdown-content">
+                    <a href="#">House</a>
+                    <a href="#">Apartment</a>
+                    <a href="#">Condo</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sell</a>
+                <div class="dropdown-content">
+                    <a href="#">Sell a House</a>
+                    <a href="#">Sell an Apartment</a>
+                    <a href="#">Sell a Condo</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="search-bar">
+        <h1>Find Your Dream Home</h1>
+        <form id="searchForm">
+            <input type="text" placeholder="Location" id="location">
+            <select id="propertyType">
+                <option value="">Property Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="condo">Condo</option>
+            </select>
+            <input type="number" placeholder="Min Price" id="minPrice">
+            <input type="number" placeholder="Max Price" id="maxPrice">
+            <button type="button" onclick="searchProperties()">Search</button>
+        </form>
+    </section>
+
+
+    <section class="featured-listings">
+        <h2>Featured Listings</h2>
+
+        <div class="listing">
+            <img src="image/image.png" alt="Property Image">
+            <h3>Modern Family House</h3>
+            <p>$500,000 - New York, NY</p>
+            <div class="details">
+                <p><strong>Bedroom:</strong> 3</p>
+                <p><strong>Size:</strong> 2,000 Sq.Ft</p>
+                <p><strong>Price:</strong> $500,000</p>
+            </div>
+        </div>
+
+        <div class="listing">
+            <img src="image/apart2.jpg" alt="Property Image">
+            <h3>Luxury Condo</h3>
+            <p>$750,000 - Los Angeles, CA</p>
+            <div class="details">
+                <p><strong>Bedroom:</strong> 2</p>
+                <p><strong>Size:</strong> 1,500 Sq.Ft</p>
+                <p><strong>Price:</strong> $750,000</p>
+            </div>
+        </div>
+
+        <div class="listing">
+            <img src="image/apart.jpg" alt="Property Image">
+            <h3>Cozy Apartment</h3>
+            <p>$350,000 - Miami, FL</p>
+            <div class="details">
+                <p><strong>Bedroom:</strong> 1</p>
+                <p><strong>Size:</strong> 800 Sq.Ft</p>
+                <p><strong>Price:</strong> $350,000</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-us">
+        <div class="about-box">
+            <h2>About Us</h2>
+            <p>We are a leading real estate agency dedicated to helping you find your perfect home. Our team offers expert guidance and exceptional service to make your real estate journey smooth and successful.</p>
+        </div>
+    </section>
+
+
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p><strong>John Doe</strong></p>
+            <p>"I had a fantastic experience buying my home through this website. The listings were detailed and easy to navigate."</p>
+        </div>
+        <div class="review">
+            <p><strong>Jane Smith</strong></p>
+            <p>"Renting a condo was seamless thanks to the helpful customer service and the detailed property descriptions."</p>
+        </div>
+        <div class="review">
+            <p><strong>Mark Johnson</strong></p>
+            <p>"Selling my apartment was quick and hassle-free. Highly recommend this service!"</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>Contact Us</p>
+            <p>Address: 1234 Street Name, City, Country</p>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
